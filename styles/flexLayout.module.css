@@ -1,0 +1,25 @@
+.flex_layout{
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    overflow-wrap: revert-layer;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.flex_layout::-webkit-scrollbar{
+    display: none;
+}
+.flex_layout.row{
+    flex-direction: row;
+}
+
+.flex_layout.column{
+    flex-direction: column;
+}
+
+.flex_layout_container {
+    flex: 1 1 0%;
+    box-sizing: border-box;
+    overflow: hidden;
+}

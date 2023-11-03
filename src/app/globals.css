@@ -40,6 +40,8 @@
   --card-border-rgb: 131, 134, 135;
 }
 
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -86,6 +88,12 @@ body {
 }
 
 body {
+  width: 100vw !important;
+  height: 100vh !important;
+  margin: 0;
+  display: inline-flex;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
