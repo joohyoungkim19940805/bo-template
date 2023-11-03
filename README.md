@@ -25,11 +25,9 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 
 nvm ls  
 
-(if not found nvm command? close and open terminal )
-
 nvm install --lts
 ```
-- 
+(if not found nvm command? close and open terminal )
 
 step 4 :
 - Open VSCODE
