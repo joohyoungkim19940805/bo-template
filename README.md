@@ -37,7 +37,7 @@ step 4 :
 - git clone this repository
 ## Getting Started Command
 
-- First, run the development server:
+First, run the development server:
 
 ```bash
 npm run dev
