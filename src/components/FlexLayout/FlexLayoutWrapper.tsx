@@ -53,13 +53,7 @@ const FlexLayoutWrapper = (prop : Props) => {
 	let parentSize : number;
 	let totalMovement : number;
 	let activeIndex : number | null;
-	/*
-	const [isResizePanelClick, setIsResizePanelClick] = useState(false); 
-	const [prevTouchEvent, setPrevTouchEvent] = useState<TouchEvent | null>(null);
-	const [parentSize, setParentSize] = useState(0);
-	const [totalMovement, setTotalMovement] = useState<0 | null>(null);
-	const [activeIndex, setActiveIndex] = useState<0 | null> (null);
-	*/
+
 	const panelMouseDownEvent = (event : any, index : number) => {
 		isResizePanelClick = true;
 		parentSize = (flexLayoutWrapperRef.current?.getBoundingClientRect() as any)[flexDirectionModel[direction].sizeName];
@@ -68,12 +62,6 @@ const FlexLayoutWrapper = (prop : Props) => {
 		activeIndex = index;
 
 		if(!parentSize) return;
-		/*
-		setTotalMovement(0);
-		setPrevTouchEvent(null);
-		setParentSize(0);
-		setIsResizePanelClick(true);
-		*/
 		document.body.style.cursor = flexDirectionModel[direction].resizeCursor;
 	}
 
@@ -82,13 +70,6 @@ const FlexLayoutWrapper = (prop : Props) => {
 		parentSize = 0;
 		prevTouchEvent = null;
 		totalMovement = 0;
-		//activeIndex = null;
-		/*
-		setTotalMovement(0);
-		setPrevTouchEvent(null);
-		setParentSize(0);
-		setIsResizePanelClick(false);
-		*/
 		document.body.style.cursor = '';
 	}
 	
