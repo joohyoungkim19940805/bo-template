@@ -1,9 +1,18 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "target": "es5",
 		"lib": [
 		  "dom", 
 		  "dom.Iterable",
+      "ES2015",
+		  "ES2016",
+		  "ES2017",
+		  "ES2018",
+		  "ES2019",
+		  "ES2020",
+      "ES2021",
+      "ES2022",
+      "ES2023",
 		  "esnext"
 		],
     "allowSyntheticDefaultImports": false,
@@ -26,8 +35,8 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@components/*" : ["./components/*"],
-      "@styles/*": ["./styles/*"]
+      "@components/*" : ["./src/components/*"],
+      "@styles/*": ["./src/styles/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

@@ -4,7 +4,7 @@ import flexLayoutStyles from '@styles/flexLayout.module.css'
 
 const Footer = () => {
   return (
-    <div id={styles.footer_wrapper} className={`${flexLayoutStyles.flex_layout_container}`}>
+    <div id={styles.footer_wrapper}>
       <div>footer array</div>
     </div>
   )
