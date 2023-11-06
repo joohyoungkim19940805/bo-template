@@ -1,13 +1,10 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '@/app/globals.css'
-import * as React from 'react'
-import styles from '@/app/layout.module.css'
-import flexLayoutStyles from '@styles/flexLayout.module.css'
-import FlexLayoutPanel from '@components/FlexLayout/FlexLayoutPanel'
+import { Dispatch, ReactNode, SetStateAction, createContext, useState } from 'react'
 import { useRouter } from "next/navigation";
 import FlexLayoutWrapper from '@components/FlexLayout/FlexLayoutWrapper'
-import FlexLayoutContainer from '@/components/FlexLayout/FlexLayoutContainer'
+import GlobalAccountContextWrapper from '@/components/globalContextWrapper/GlobalAccountContextWrapper';
 const inter = Inter({ subsets: ['latin'] })
 
 //<div className={classNames(style.red,style.btn)}>Hello Webpack!!!</div>
@@ -22,28 +19,28 @@ const RootLayout = ({
 	children,
 	header,
 	footer,
-	sideMenu,
-	...aaa
+	sideMenu
 } : {
-	children : React.ReactNode,
-	header : React.ReactNode,
-	footer : React.ReactNode,
-	sideMenu : React.ReactNode
+	children : ReactNode,
+	header : ReactNode,
+	footer : ReactNode,
+	sideMenu : ReactNode
 }) => {
-	const direction : string = 'column';
 	return (
 		<html lang="ko">
 			<body className={inter.className}>
-				<FlexLayoutWrapper direction='column' grow={[0.3, 1, 0.1]}>
-					{header}
-					
-					<FlexLayoutWrapper direction='row' grow={[0.3, 1]}>
-						{sideMenu}
-						{children}
-					</FlexLayoutWrapper>
+				<GlobalAccountContextWrapper>
+					<FlexLayoutWrapper direction='column' grow={[0.3, 1, 0.1]}>
+						{header}
+						
+						<FlexLayoutWrapper direction='row' grow={[0.3, 1]}>
+							{sideMenu}
+							{children}
+						</FlexLayoutWrapper>
 
-					{footer}
-				</FlexLayoutWrapper>
+						{footer}
+					</FlexLayoutWrapper>
+				</GlobalAccountContextWrapper>
 			</body>
 		</html>
 	)

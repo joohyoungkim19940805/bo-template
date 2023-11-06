@@ -3,15 +3,9 @@ import Image from 'next/image'
 import styles from '@/app/page.module.css'
 import flexLayoutStyles from '@styles/flexLayout.module.css'
 import SideMenu, {sideMenuRef} from '@/app/@sideMenu/page'
-import FlexLayoutPanel from '@components/FlexLayout/FlexLayoutPanel'
 import {useRef, useEffect} from 'react'
 
 const Content = () => {
-    const direction = 'row';
-    useEffect(() => {
-        // Does not work!
-        //console.log('sideMenuRef ::: ',sideMenuRef);
-      }, [])
   return (
 	<div>
         <div>
