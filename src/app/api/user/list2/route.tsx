@@ -8,7 +8,7 @@ export async function GET(request: Request) {
     const password = searchParams.get("password");
 //
 
-    const response = await axios.get('https://jsonplaceholder.typicode.com/posts')
+    const response = await axios.get('https://jsonplaceholder.typicode.com/posts/1/comments')
 
     const data = response.data;
  

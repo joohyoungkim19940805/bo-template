@@ -85,12 +85,12 @@
 }
 
 
-.list_scroll.list_scroll-y{
+.list_scroll.list_scroll_y{
 	position: relative;
 	overflow-y: auto;
 	overflow-x: clip;
 }
-.list_scroll.list_scroll-x{
+.list_scroll.list_scroll_x{
 	position: relative;
 	overflow-y: clip;
 	overflow-x: auto;

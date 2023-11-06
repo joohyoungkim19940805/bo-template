@@ -59,6 +59,8 @@ const Header = () => {
                       //push('/'); / 메인 으로 이동
                       setIsLoginClick(false);
                   }
+                  setAccountId('');
+                  setPassword('');
               }}>
                   <input type='text' onInput={(e)=>setAccountId((e.target as HTMLInputElement).value)}></input>
                   <input type='password' onInput={(e)=>setPassword((e.target as HTMLInputElement).value)}></input>
