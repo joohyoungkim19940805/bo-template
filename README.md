@@ -229,4 +229,4 @@ const [isLoginClick, setIsLoginClick] = useState(false);
 ## 풀더 경로가 src/app/api/login/loginProcessing 인 경우
 - (page.tsx) window.fetch(`/api/login/loginProcessing`, {method: 'POST'})
 #### route.tsx
-![routetsx1]https://github.com/joohyoungkim19940805/imgRepository/blob/main/routetsx1.PNG?raw=true
+![routetsx1](https://github.com/joohyoungkim19940805/imgRepository/blob/main/routetsx1.PNG?raw=true)
