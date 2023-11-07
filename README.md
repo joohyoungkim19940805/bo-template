@@ -32,9 +32,9 @@ nvm install --lts
 ## step 4 :
 - Open VSCODE
 - install WSL and install Remote Explorer <br/>
-  ![wsl](https://github.com/joohyoungkim19940805/bo-template/assets/74181623/bae4ff0d-2fbe-4dba-a22d-136e6515d62a)
+  ![wsl](https://github.com/joohyoungkim19940805/imgRepository/blob/main/wsl.PNG?raw=true)
 - Connect to... WSL <br/>
-  ![4545](https://github.com/joohyoungkim19940805/bo-template/assets/74181623/22b1c705-db86-43fe-bd68-ac37cc987b51)
+  ![4545](https://github.com/joohyoungkim19940805/imgRepository/blob/main/4545.PNG?raw=true)
 - git clone this repository
 
 # Getting Started Command
@@ -58,8 +58,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ###  src/app/ === http://localhost:3000/ <br/>
 
 ###  src/app/menu1page === http://localhost:3000/menu1page <br/>
+![url](https://github.com/joohyoungkim19940805/imgRepository/blob/main/url.PNG?raw=true)
 
-![url](https://github.com/joohyoungkim19940805/bo-template/assets/74181623/ba11edb2-2b35-43da-a0be-e014996bfcc8)
 
 # 동적 경로 사용법 
 ###  src/app/[id] == http://localhost:3000/{id} <br/>
@@ -217,17 +217,16 @@ const [isLoginClick, setIsLoginClick] = useState(false);
 - route.tsx에서 export 할 때 함수 명칭은 GET, POST, PUT, DELETE 등 http method 규칙을 따른다 (next js 규칙, 미준수시 동작 안함) (export default 사용하지 말 것)
 
 ## example
-![url2](https://github.com/joohyoungkim19940805/bo-template/assets/74181623/39d9d493-55c9-4670-a222-07f7c61d1f70)
+![url2](https://github.com/joohyoungkim19940805/imgRepository/blob/main/url2.PNG?raw=true)
 
 ## 풀더 경로가 src/app/api/user/list 인 경우 
 - (page.tsx) window.fetch(`/api/user/list`, {method: 'GET'}) <br/>
 #### route.tsx
-![ro2](https://github.com/joohyoungkim19940805/bo-template/assets/74181623/3cb89672-3d2a-4682-a1a9-9de58d81a027)
-
+![ro2](https://github.com/joohyoungkim19940805/imgRepository/blob/main/ro2.PNG?raw=true)
 #### page.tsx
-![t2](https://github.com/joohyoungkim19940805/bo-template/assets/74181623/cb848589-1900-4ea4-b920-0847af1063c6)
+![t2](https://github.com/joohyoungkim19940805/imgRepository/blob/main/t2.PNG?raw=true)
 
 ## 풀더 경로가 src/app/api/login/loginProcessing 인 경우
 - (page.tsx) window.fetch(`/api/login/loginProcessing`, {method: 'POST'})
 #### route.tsx
-![routetsx1](https://github.com/joohyoungkim19940805/bo-template/assets/74181623/89c9aabc-7e22-4dff-8520-0c4d7624be43)<br/>
+![routetsx1]https://github.com/joohyoungkim19940805/imgRepository/blob/main/routetsx1.PNG?raw=true
