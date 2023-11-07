@@ -1,6 +1,6 @@
 BO TEAMPLATE 프로젝트
 
-# Setting Development environment for Window
+# Setting Development environment for Window (for pm2 test)
 
 ## step 1 : 
 - Open Window power shell
