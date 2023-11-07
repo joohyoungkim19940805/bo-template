@@ -120,7 +120,7 @@ let isLogin = false;
 jsx 내부에서 클로저된 변수를 참조 할 수 없기에 useState의 set...을 이용하는 것
 
 ## useEffect == 렌더링 될 때 마다 실행 
-#### @see https://legacy.reactjs.org/docs/hooks-effect.html  <br/>
+#### @see https://react.dev/reference/react/useEffect  <br/>
 
 ### window 객체에 이벤트 핸들러 사용할 시
 ``` typescript
