@@ -213,20 +213,20 @@ const [isLoginClick, setIsLoginClick] = useState(false);
 # 외부 api 호출 (api route)
 
 - api는 src/app/api/... 경로를 이용한다.
-- 파일 명칭은 route.tsx로 한다. (next js 규칙, 미준수시 동작 안함)
-- route.tsx에서 export 할 때 함수 명칭은 GET, POST, PUT, DELETE 등 http method 규칙을 따른다 (next js 규칙, 미준수시 동작 안함) (export default 사용하지 말 것)
+- 파일 명칭은 route.ts로 한다. (next js 규칙, 미준수시 동작 안함)
+- route.ts에서 export 할 때 함수 명칭은 GET, POST, PUT, DELETE 등 http method 규칙을 따른다 (next js 규칙, 미준수시 동작 안함) (export default 사용하지 말 것)
 
 ## example
 ![url2](https://github.com/joohyoungkim19940805/imgRepository/blob/main/url2.PNG?raw=true)
 
 ## 풀더 경로가 src/app/api/user/list 인 경우 
 - (page.tsx) window.fetch(`/api/user/list`, {method: 'GET'}) <br/>
-#### route.tsx
+#### route.ts
 ![ro2](https://github.com/joohyoungkim19940805/imgRepository/blob/main/ro2.PNG?raw=true)
-#### page.tsx
+#### page.ts
 ![t2](https://github.com/joohyoungkim19940805/imgRepository/blob/main/t2.PNG?raw=true)
 
 ## 풀더 경로가 src/app/api/login/loginProcessing 인 경우
 - (page.tsx) window.fetch(`/api/login/loginProcessing`, {method: 'POST'})
-#### route.tsx
+#### route.ts
 ![routetsx1](https://github.com/joohyoungkim19940805/imgRepository/blob/main/routetsx1.PNG?raw=true)
